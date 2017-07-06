@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="469.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.ReservationInfoWindowController">
+   <children>
+      <Label alignment="CENTER" layoutX="105.0" layoutY="-1.0" prefHeight="17.0" prefWidth="689.0" style="-fx-background-color: chocolate;" text="YOUR RESERVATION INFORMATION" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="87.0" text="Reservation ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ReservationID" layoutX="215.0" layoutY="85.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="RoomNumber" layoutX="215.0" layoutY="118.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="Name" layoutX="215.0" layoutY="222.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="ArrivalDate" layoutX="215.0" layoutY="263.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="DepartureDate" layoutX="215.0" layoutY="304.0" prefHeight="25.0" prefWidth="182.0" />
+      <Label layoutX="60.0" layoutY="120.0" prefHeight="21.0" prefWidth="102.0" text="Room Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="224.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="265.0" text="Arrival Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="306.0" text="Departure Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="447.0" text="© 2017 New World Hotels. All rights reserved." />
+      <Label layoutX="60.0" layoutY="157.0" text="Room Type">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="RoomType" layoutX="215.0" layoutY="155.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="BedType" layoutX="215.0" layoutY="189.0" prefHeight="25.0" prefWidth="182.0" />
+      <Label layoutX="60.0" layoutY="191.0" prefHeight="21.0" prefWidth="76.0" text="Bed Type">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="347.0" text="No. Adults">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="No_of_Adults" layoutX="215.0" layoutY="345.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="No_of_Children" layoutX="215.0" layoutY="387.0" prefHeight="25.0" prefWidth="182.0" />
+      <Label layoutX="60.0" layoutY="389.0" prefHeight="21.0" prefWidth="89.0" text="No. Children">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" alignment="CENTER" layoutX="149.0" layoutY="41.0" prefHeight="31.0" prefWidth="538.0" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="88.0" prefHeight="19.0" prefWidth="89.0" text="(6-digit code).">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="599.0" layoutY="120.0" prefHeight="21.0" prefWidth="194.0" style="-fx-background-color: chocolate;" text="BILL" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="price_per_day" contentDisplay="CENTER" layoutX="706.0" layoutY="157.0" prefHeight="21.0" prefWidth="31.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="600.0" layoutY="197.0" prefHeight="20.0" prefWidth="89.0" style="-fx-background-color: chocolate;" text="Total Stay   X" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="no_of_days" alignment="CENTER" layoutX="709.0" layoutY="197.0" prefHeight="20.0" prefWidth="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="600.0" layoutY="158.0" prefHeight="20.0" prefWidth="89.0" style="-fx-background-color: chocolate;" text="Price/day" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="600.0" layoutY="235.0" prefHeight="20.0" prefWidth="89.0" style="-fx-background-color: chocolate;" text="Total in USD" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_fee" layoutX="706.0" layoutY="235.0" prefHeight="20.0" prefWidth="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="finish" alignment="CENTER" layoutX="605.0" layoutY="412.0" mnemonicParsing="false" onAction="#goFinish" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: chocolate;" text="FINISH" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="402.0" layoutY="266.0" prefHeight="19.0" prefWidth="102.0" text="(YYYY/MM/DD)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="307.0" prefHeight="19.0" prefWidth="102.0" text="(YYYY/MM/DD)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="513.0" layoutY="379.0" prefHeight="20.0" prefWidth="272.0" text="Press Finish to complete your Reservation.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logo" fitHeight="73.0" fitWidth="111.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="741.0" layoutY="158.0" text="USD" textFill="BLUE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="491.0" layoutY="88.0" prefHeight="19.0" prefWidth="229.0" text="Please remember your Reservation ID.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

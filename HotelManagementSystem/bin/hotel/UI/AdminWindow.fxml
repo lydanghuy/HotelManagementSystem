@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="AdminStage" prefHeight="469.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.AdminWindowController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bin/hotel/image/nw.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="206.0" layoutY="14.0" prefHeight="38.0" prefWidth="522.0" style="-fx-background-color: chocolate;" text="ADMIN/STAFF" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Text layoutX="206.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This area is meant to be visited only by New World Hotel members. In order to continue, you have to log in." wrappingWidth="522.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="206.0" layoutY="165.0" prefHeight="25.0" prefWidth="85.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Username" layoutX="333.0" layoutY="165.0" onAction="#getUsername" />
+      <Label layoutX="206.0" layoutY="218.0" prefHeight="25.0" prefWidth="85.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Password" layoutX="333.0" layoutY="218.0" onAction="#getPassword" />
+      <Button fx:id="Login" alignment="CENTER" layoutX="273.0" layoutY="290.0" mnemonicParsing="false" onAction="#goLogin" prefHeight="31.0" prefWidth="71.0" style="-fx-background-color: chocolate;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Cancel" alignment="CENTER" layoutX="389.0" layoutY="290.0" mnemonicParsing="false" onAction="#goCancel" style="-fx-background-color: chocolate;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="missUsername" layoutX="569.0" layoutY="168.0" prefHeight="20.0" prefWidth="64.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="missPassword" layoutX="573.0" layoutY="226.0" prefHeight="20.0" prefWidth="64.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="447.0" text="© 2017 New World Hotels. All rights reserved." />
+      <Label fx:id="incorrectInput" layoutX="206.0" layoutY="358.0" prefHeight="28.0" prefWidth="509.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

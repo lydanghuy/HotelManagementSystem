@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.RoomStatusWindowController">
+   <children>
+      <ImageView fitHeight="96.0" fitWidth="148.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bin/hotel/image/nw.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="144.0" prefHeight="38.0" prefWidth="1167.0" style="-fx-background-color: chocolate;" text="ROOM STATUS" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="RoomStatus" layoutX="2.0" layoutY="114.0" prefHeight="467.0" prefWidth="1309.0">
+        <columns>
+            <TableColumn fx:id="guestID" prefWidth="77.0" text="Guest ID" />
+          <TableColumn fx:id="Name" prefWidth="107.0" text="Name" />
+          <TableColumn fx:id="Age" minWidth="0.0" prefWidth="45.0" text="Age" />
+            <TableColumn fx:id="Email" prefWidth="261.0" text="Email" />
+            <TableColumn fx:id="Country" prefWidth="144.0" text="Country" />
+            <TableColumn fx:id="RoomNo" prefWidth="82.0" text="Room No." />
+            <TableColumn fx:id="RoomType" prefWidth="92.0" text="Room Type" />
+            <TableColumn fx:id="BedType" prefWidth="99.0" text="Bed Type" />
+            <TableColumn fx:id="Arrival" prefWidth="135.0" text="Arrival Date" />
+            <TableColumn fx:id="Departure" prefWidth="142.0" text="Departure Date" />
+            <TableColumn fx:id="Adults" minWidth="1.0" prefWidth="65.0" text="Adults" />
+            <TableColumn fx:id="Children" prefWidth="59.0" text="Children" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="698.0" text="© 2017 New World Hotels. All rights reserved." />
+      <Label fx:id="totalguest" layoutX="203.0" layoutY="68.0" prefHeight="30.0" prefWidth="181.0" />
+      <Button fx:id="LoadButton" alignment="CENTER" layoutX="50.0" layoutY="618.0" mnemonicParsing="false" onAction="#LoadingInfo" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: chocolate;" text="LOAD DETAILS" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="243.0" layoutY="618.0" mnemonicParsing="false" onAction="#goLogOut" prefHeight="38.0" prefWidth="101.0" style="-fx-background-color: chocolate;" text="LOG OUT" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1076.0" layoutY="622.0" mnemonicParsing="false" onAction="#showReservation" style="-fx-background-color: chocolate;" text="VIEW RESERVATION ID" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="missSelect" alignment="CENTER" layoutX="1055.0" layoutY="665.0" prefHeight="20.0" prefWidth="220.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

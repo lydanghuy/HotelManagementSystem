@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="368.0" prefWidth="531.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="hotel.controller.ReservationListWindowController">
+   <children>
+      <Label alignment="CENTER" layoutY="1.0" prefHeight="27.0" prefWidth="531.0" style="-fx-background-color: chocolate;" text="GUEST RESERVATION" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="63.0" layoutY="77.0" prefHeight="21.0" prefWidth="80.0" text="  Full Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="282.0" layoutY="75.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label alignment="CENTER" layoutX="64.0" layoutY="135.0" prefHeight="21.0" prefWidth="117.0" text="Reservation ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="RID" layoutX="282.0" layoutY="133.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="BillID" layoutX="282.0" layoutY="190.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="Total_Fee" layoutX="282.0" layoutY="245.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label alignment="CENTER" layoutX="63.0" layoutY="192.0" prefHeight="21.0" prefWidth="58.0" text=" Bill ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="63.0" layoutY="247.0" prefHeight="21.0" prefWidth="139.0" text="Total Fee (in USD)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="346.0" prefHeight="17.0" prefWidth="308.0" text="© 2017 New World Hotels. All rights reserved." />
+   </children>
+</AnchorPane>

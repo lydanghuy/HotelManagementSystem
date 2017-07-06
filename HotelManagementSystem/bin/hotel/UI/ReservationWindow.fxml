@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="469.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.ReservationWindowController">
+   <children>
+      <DatePicker fx:id="arrival" layoutX="392.0" layoutY="78.0" prefHeight="25.0" prefWidth="185.0" />
+      <Label alignment="CENTER" layoutX="183.0" prefHeight="38.0" prefWidth="531.0" style="-fx-background-color: Chocolate;" text="RESERVATION" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="departure" layoutX="392.0" layoutY="116.0" prefHeight="25.0" prefWidth="185.0" />
+      <Label layoutX="221.0" layoutY="114.0" prefHeight="28.0" prefWidth="150.0" text="Departure Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="165.0" prefHeight="17.0" prefWidth="135.0" text="Room Type">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="RoomType" layoutX="392.0" layoutY="163.0" prefHeight="25.0" prefWidth="185.0" />
+      <Label layoutX="221.0" layoutY="199.0" prefHeight="33.0" prefWidth="117.0" text="Bed Type">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="BedType" layoutX="392.0" layoutY="203.0" prefHeight="25.0" prefWidth="185.0" />
+      <Label layoutX="221.0" layoutY="248.0" text="Adults">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adults" layoutX="392.0" layoutY="246.0" prefHeight="25.0" prefWidth="185.0" />
+      <Label layoutX="221.0" layoutY="283.0" prefHeight="17.0" prefWidth="86.0" text="Children">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="children" layoutX="392.0" layoutY="281.0" prefHeight="25.0" prefWidth="185.0" />
+      <Label layoutX="221.0" layoutY="82.0" prefHeight="21.0" prefWidth="106.0" text="Arrival Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="check" alignment="CENTER" layoutX="296.0" layoutY="372.0" mnemonicParsing="false" onAction="#checkAvailability" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: Chocolate;" text="CHECK AVAILABILITY" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="438.0" prefHeight="17.0" prefWidth="278.0" text="© 2017 New World Hotels. All rights reserved." />
+      <Label fx:id="missArrival" layoutX="600.0" layoutY="82.0" prefHeight="17.0" prefWidth="71.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="missDeparture" layoutX="600.0" layoutY="118.0" prefHeight="20.0" prefWidth="71.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="missAdults" layoutX="589.0" layoutY="250.0" prefHeight="20.0" prefWidth="117.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="warning" alignment="CENTER" layoutX="223.0" layoutY="329.0" prefHeight="21.0" prefWidth="357.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrongFormatChild" layoutX="590.0" layoutY="285.0" prefHeight="20.0" prefWidth="117.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../src/hotel/image/nw.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

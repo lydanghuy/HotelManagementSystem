@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="469.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.GuestInfoWindowController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bin/hotel/image/nw.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="202.0" layoutY="1.0" prefHeight="38.0" prefWidth="522.0" style="-fx-background-color: chocolate;" text="RESERVATION" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="74.0" prefHeight="17.0" prefWidth="177.0" text="Available Rooms">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="AvailableRoom" layoutX="398.0" layoutY="74.0" prefHeight="26.0" prefWidth="187.0" />
+      <Label alignment="CENTER" layoutY="142.0" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: chocolate;" text="PERSONAL INFORMATION" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="148.0" text="First Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FirstName" layoutX="340.0" layoutY="149.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="229.0" layoutY="184.0" text="Last Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LastName" layoutX="340.0" layoutY="182.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="229.0" layoutY="224.0" prefHeight="21.0" prefWidth="34.0" text="Age">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Age" layoutX="340.0" layoutY="222.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="229.0" layoutY="263.0" prefHeight="21.0" prefWidth="57.0" text="Country">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Country" layoutX="340.0" layoutY="261.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="233.0" layoutY="300.0" text="Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Email" layoutX="340.0" layoutY="298.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label fx:id="missFirstName" layoutX="592.0" layoutY="149.0" prefHeight="20.0" prefWidth="94.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="missLastName" layoutX="592.0" layoutY="185.0" prefHeight="20.0" prefWidth="94.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="missAge" layoutX="592.0" layoutY="225.0" prefHeight="20.0" prefWidth="129.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="missCountry" layoutX="593.0" layoutY="263.0" prefHeight="20.0" prefWidth="94.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="missEmail" layoutX="592.0" layoutY="301.0" prefHeight="20.0" prefWidth="63.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="Confirm" layoutX="386.0" layoutY="360.0" mnemonicParsing="false" onAction="#ConfirmReservation" prefHeight="26.0" prefWidth="129.0" style="-fx-background-color: chocolate;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="447.0" prefHeight="17.0" prefWidth="245.0" text="© 2017 New World Hotels. All rights reserved." />
+   </children>
+</AnchorPane>

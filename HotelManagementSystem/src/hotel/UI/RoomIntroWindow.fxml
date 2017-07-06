@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.RoomIntroWindowController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bin/hotel/image/nw.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgpic" fitHeight="465.0" fitWidth="893.0" layoutX="14.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="infopic" fitHeight="360.0" fitWidth="353.0" layoutX="910.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+      <MenuButton fx:id="btnstandard" alignment="CENTER" layoutX="290.0" layoutY="93.0" mnemonicParsing="false" onAction="#MainImage" style="-fx-background-color: chocolate;" text="STANDARD ROOM" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="btnsingle" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="SINGLE BED ROOM" />
+          <MenuItem fx:id="btndouble" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="DOUBLE BED ROOM" />
+            <MenuItem fx:id="btntwins" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="TWINS BED ROOM" />
+        </items>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="btndeluxe" alignment="CENTER" contentDisplay="CENTER" layoutX="664.0" layoutY="94.0" mnemonicParsing="false" onAction="#MainImage" style="-fx-background-color: chocolate;" text="DELUXE ROOM" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="btnsingle2" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="SINGLE BED ROOM" />
+          <MenuItem fx:id="btndouble2" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="DOUBLE BED ROOM" />
+            <MenuItem fx:id="btntwins2" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="TWINS BED ROOM" />
+        </items>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="btnsuite" alignment="CENTER" layoutX="1013.0" layoutY="101.0" mnemonicParsing="false" onAction="#MainImage" style="-fx-background-color: chocolate;" text="SUITE ROOM" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="btnsingle3" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="SINGLE BED ROOM" />
+          <MenuItem fx:id="btndouble3" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="DOUBLE BED ROOM" />
+            <MenuItem fx:id="btntwins3" mnemonicParsing="false" onAction="#MainImage" onMenuValidation="#MainImage" text="TWINS BED ROOM" />
+        </items>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </MenuButton>
+      <Label alignment="CENTER" layoutX="214.0" layoutY="3.0" prefHeight="63.0" prefWidth="1065.0" style="-fx-background-color: chocolate;" text="ROOMS" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="684.0" text="© 2017 New World Hotels. All rights reserved." />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="104.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="42.0" prefHeight="21.0" prefWidth="580.0" text="According to your request, we are sorry that there are not any available rooms.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="4.0" prefHeight="21.0" prefWidth="238.0" style="-fx-background-color: chocolate;" text="NEW WORLD HOTEL" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="146.0" layoutY="69.0" prefHeight="21.0" prefWidth="338.0" text="Please check again and make another reservation. ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

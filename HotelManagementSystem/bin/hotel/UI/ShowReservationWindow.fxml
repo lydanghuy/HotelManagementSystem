@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="589.0" prefWidth="794.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="hotel.controller.ShowReservationWindowController">
+   <children>
+      <Label alignment="CENTER" layoutX="130.0" layoutY="1.0" prefHeight="26.0" prefWidth="664.0" style="-fx-background-color: chocolate;" text="RESERVATION INFORMATION" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="558.0" text="© 2017 New World Hotels. All rights reserved." />
+      <Label layoutX="141.0" layoutY="80.0" text="Reservation ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="R_ID" layoutX="283.0" layoutY="78.0" />
+      <TextField fx:id="RoomNumber" layoutX="283.0" layoutY="115.0" />
+      <TextField fx:id="Roomtype" layoutX="283.0" layoutY="155.0" />
+      <TextField fx:id="BedType" layoutX="283.0" layoutY="194.0" />
+      <TextField fx:id="Name" layoutX="283.0" layoutY="235.0" />
+      <TextField fx:id="ArrivalDate" layoutX="283.0" layoutY="278.0" />
+      <TextField fx:id="DepartureDate" layoutX="283.0" layoutY="317.0" />
+      <TextField fx:id="Adults" layoutX="283.0" layoutY="358.0" />
+      <Label layoutX="141.0" layoutY="118.0" text="Room Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="158.0" text="Room Type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="197.0" text="Bed Type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="238.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="281.0" text="Arrival Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="320.0" text="Departure Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="361.0" text="No. of Adults">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="396.0" text="No. of Children">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Children" layoutX="283.0" layoutY="394.0" />
+      <Label alignment="CENTER" layoutX="140.0" layoutY="464.0" prefHeight="38.0" prefWidth="96.0" style="-fx-background-color: chocolate;" text="TOTAL FEE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_fee" layoutX="283.0" layoutY="464.0" prefHeight="38.0" prefWidth="149.0" textFill="BLUE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="proposal" fitHeight="446.0" fitWidth="251.0" layoutX="502.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="logo" fitHeight="94.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

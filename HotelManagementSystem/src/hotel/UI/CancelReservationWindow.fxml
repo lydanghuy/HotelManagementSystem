@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="469.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.CancelReservationWindowController">
+   <children>
+      <ImageView fitHeight="118.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bin/hotel/image/nw.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="7.0" layoutY="447.0" prefHeight="17.0" prefWidth="264.0" text="© 2017 New World Hotels. All rights reserved." />
+      <Label alignment="CENTER" layoutX="170.0" layoutY="2.0" prefHeight="25.0" prefWidth="544.0" style="-fx-background-color: chocolate;" text="CANCEL RESERVATION" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="106.0" prefHeight="25.0" prefWidth="192.0" text="Enter your Reservation ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ReserveID" layoutX="428.0" layoutY="106.0" />
+      <Label layoutX="195.0" layoutY="163.0" prefHeight="25.0" prefWidth="192.0" text="Enter your Room Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="RoomNumber" layoutX="428.0" layoutY="163.0" />
+      <Button fx:id="cancelbutton" alignment="CENTER" layoutX="328.0" layoutY="324.0" mnemonicParsing="false" onAction="#cancelReservation" style="-fx-background-color: chocolate;" text="CONFIRM CANCEL" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="195.0" layoutY="222.0" text="Enter your Last Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LastName" layoutX="428.0" layoutY="222.0" />
+      <Label layoutX="600.0" layoutY="108.0" text="(6-digit code)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" alignment="CENTER" layoutX="195.0" layoutY="285.0" prefHeight="20.0" prefWidth="448.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

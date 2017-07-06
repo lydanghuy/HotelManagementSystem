@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.MainWindowController">
+   <children>
+      <ImageView fx:id="background" fitHeight="406.0" fitWidth="1200.0" layoutX="23.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="reserveButton" layoutX="237.0" layoutY="33.0" mnemonicParsing="false" onAction="#goReservation" prefHeight="40.0" prefWidth="164.0" style="-fx-background-color: chocolate;" text="RESERVATION" textFill="WHITE" />
+      <Button fx:id="roomButton" layoutX="889.0" layoutY="33.0" mnemonicParsing="false" onAction="#viewRoom" prefHeight="40.0" prefWidth="164.0" style="-fx-background-color: chocolate;" text="VIEW ROOMS" textFill="WHITE" AnchorPane.topAnchor="33.0" />
+      <Button fx:id="adminButton" layoutX="1098.0" layoutY="33.0" mnemonicParsing="false" onAction="#accessAdmin" prefHeight="40.0" prefWidth="164.0" style="-fx-background-color: chocolate;" text="ADMIN/STAFF" textFill="WHITE" />
+      <TextArea editable="false" layoutX="-7.0" layoutY="586.0" prefHeight="146.0" prefWidth="1321.0" text="&#10;&#10;&#10;&#10;                                                                                                                                                                                      +84 28 3822 8888&#10;                                                                                                                                                                  76 Le Lai Street, District 1, Ho Chi Minh City, Vietnam&#10; © 2017 New World Hotels. All rights reserved." />
+      <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="CENTER" layoutX="451.0" layoutY="33.0" mnemonicParsing="false" onAction="#cancelResrvation" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: chocolate;" text="CANCEL RESERVATION" textFill="WHITE" />
+      <Button fx:id="checkbookingButton" layoutX="678.0" layoutY="33.0" mnemonicParsing="false" onAction="#goCheckBooking" prefHeight="40.0" prefWidth="164.0" style="-fx-background-color: chocolate;" text="CHECK RESERVATION" textFill="WHITE" />
+      <Button fx:id="nextimage3" layoutX="113.0" layoutY="556.0" mnemonicParsing="false" onAction="#goNextImage" prefHeight="21.0" prefWidth="21.0" style="-fx-background-color: chocolate;" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextimage4" layoutX="146.0" layoutY="556.0" mnemonicParsing="false" onAction="#goNextImage" prefHeight="23.0" prefWidth="21.0" style="-fx-background-color: chocolate;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextimage5" layoutX="179.0" layoutY="556.0" mnemonicParsing="false" onAction="#goNextImage" prefHeight="21.0" prefWidth="21.0" style="-fx-background-color: chocolate;" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextimage2" layoutX="79.0" layoutY="556.0" mnemonicParsing="false" onAction="#goNextImage" prefHeight="21.0" prefWidth="21.0" style="-fx-background-color: chocolate;" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextimage1" layoutX="46.0" layoutY="556.0" mnemonicParsing="false" onAction="#goNextImage" prefHeight="21.0" prefWidth="21.0" style="-fx-background-color: chocolate;" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="414.0" fitWidth="211.0" layoutX="1069.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bin/hotel/image/leisure.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo" fitHeight="114.0" fitWidth="171.0" layoutX="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/nw.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>
